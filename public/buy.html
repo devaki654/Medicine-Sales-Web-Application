@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medicine</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-box img:hover {
+    transform: scale(1.05);
+}
+
+.detail-box h6 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.btn_container {
+    margin-top: 10px;
+}
+
+.btn_container a {
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn_container a:hover {
+    background: #0056b3;
+}
+nav {
+    background: #007bff;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+         
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="de.html">Delivery</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Choose Your Medicine</h2>
+        <div class="carousel">
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med1.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>Health</h6>
+                        <h6 class="price">$30</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med2.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>Pressure Tablet</h6>
+                        <h6 class="price">$40</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Pressure Tablet&amount=40">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med3.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>Skin</h6>
+                        <h6 class="price">$50</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Skin&amount=50">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med4.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>Health</h6>
+                        <h6 class="price">$30</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med5.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>Cholesterol</h6>
+                        <h6 class="price">$70</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Cholesterol&amount=70">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med6.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>leg</h6>
+                        <h6 class="price">$80</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=leg&amount=80">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med7.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>fever</h6>
+                        <h6 class="price">$20</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med8.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>pressure</h6>
+                        <h6 class="price">$90</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med9.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>health</h6>
+                        <h6 class="price">$300</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med10.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>hemoglobin</h6>
+                        <h6 class="price">$30</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med11.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>blood low</h6>
+                        <h6 class="price">$400</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med12.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>white cels</h6>
+                        <h6 class="price">$30</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med13.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>hand pain</h6>
+                        <h6 class="price">$30</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med14.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>stress</h6>
+                        <h6 class="price">$20</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/med15.jpg" alt="Medicine">
+                    </div>
+                    <div class="detail-box">
+                        <h6>health</h6>
+                        <h6 class="price">$300</h6>
+                    </div>
+                    <div class="btn_container">
+                        <a href="de.html?medicine=Health&amount=30">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medicine</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    body { padding: 0; margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; }
+    
+    .cart-icon, .shop-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    .cart-icon:hover, .shop-icon:hover { background: #218838; transform: scale(1.1); }
+    .shop-icon { right: 80px; background: #007bff; }
+    
+    .icon-container { display: flex; justify-content: center; gap: 30px; margin-top: 50px; flex-wrap: wrap; }
+    .icon-box {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 200px;
+    }
+    .icon-box:hover { transform: scale(1.1); }
+    .icon-box i { font-size: 40px; margin-bottom: 10px; }
+    .description { font-size: 14px; margin-top: 10px; }
+    a { text-decoration: none; color: inherit; }
+    
+    .carousel-item img { width: 100%; height: 400px; object-fit: cover; }
+    .carousel-caption { background: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; }
+    .icon-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .icon-box {
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+    .shop-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .shop-image:hover {
+      transform: scale(1.1);
+    }
+    .description {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+    <body>
+  <header class="header_section bg-light">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><i class="fa fa-medkit"></i> Medicine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+        
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="de.html"><i class="fa fa-truck"></i> Delivery</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider Section -->
+  <section class="container mt-4">
+    <div id="medicineCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/medicine.png" class="d-block w-100" alt="High Quality Medicines">
+          <div class="carousel-caption">
+            <h5>High-Quality Medicines</h5>
+            <p>Best healthcare products at affordable prices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Cart Icon -->
+  <a href="buy.html" class="cart-icon"><i class="fa fa-shopping-cart"></i></a>
+
+  <h2>Welcome to Our Online Shop</h2>
+  <div class="icon-container">
+    <a href="buy.html" class="icon-box">
+      <img src="shoop2.jpeg" alt="MediCare Hub" class="shop-image">
+      <p class="description"><b>MediCare Hub</b><br>Your trusted source for quality medicines.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="shop1.jpg" alt="Wellness Pharmacy" class="shop-image">
+      <p class="description"><b>Wellness Pharmacy</b><br>Affordable and reliable healthcare solutions.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh3.jpeg" alt="PharmaTrust" class="shop-image">
+      <p class="description"><b>PharmaTrust</b><br>Fast and safe delivery of essential medicines.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh4.jpeg" alt="HealthPlus Pharmacy" class="shop-image">
+      <p class="description"><b>HealthPlus Pharmacy</b><br>Bringing wellness to your doorstep.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sg5.jpeg" alt="CureWell Pharmacy" class="shop-image">
+      <p class="description"><b>CureWell Pharmacy</b><br>Your one-stop shop for all healthcare needs.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh6.jpeg" alt="LifeCare Meds " class="shop-image">
+      <p class="description"><b>LifeCare Meds </b><br> Ensuring your health with every purchase.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh7.jpeg" alt="MediEase" class="shop-image">
+      <p class="description"><br><b>MediEase</b><br>Simplifying your medicine shopping experience.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh8.jpeg" alt="VitalMeds" class="shop-image">
+      <p class="description"><br><b>VitalMeds</b><br>Quality healthcare, anytime, anywhere..</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh9.jpeg" alt="QuickMedi " class="shop-image">
+      <p class="description"><br><b>QuickMedi </b><br> Fast, reliable, and affordable medicines.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh10.jpeg" alt="PharmaDirect " class="shop-image">
+      <p class="description"><br><b>PharmaDirect </b><br>Your one-stop shop for all medical needs.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh11.jpeg" alt="VitalCure Pharmacy " class="shop-image">
+      <p class="description"><br><b>VitalCure Pharmacy </b><br>Quality medicines for a healthier life.</p>
+    </a>
+    <a href="buy.html" class="icon-box">
+      <img src="sh12.jpeg" alt="Guardian Meds " class="shop-image">
+      <p class="description"><br> <b>Guardian Meds </b><br>Safe and effective medicines for every need</p>
+    </a>
+    
+    
+  </div>
+  
+
+  
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

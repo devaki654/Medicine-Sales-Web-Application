@@ -1,0 +1,25 @@
+const fs = require('fs');
+const path = require('path');
+
+app.post("/submit-order", (req, res) => {
+  const { name, email, phone, medicine, address } = req.body;
+
+  if (!name || !email || !phone || !medicine || !address) {
+    return res.status(400).send("All fields are required!");
+  }
+
+  // Prepare the data to be written to the file
+  const orderData = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMedicine: ${medicine}\nAddress: ${address}\n\n`;
+
+  // Specify the file path (it will be saved in the 'orders.txt' file)
+  const filePath = path.join(__dirname, 'orders.txt');
+
+  // Append the data to the file
+  fs.appendFile(filePath, orderData, (err) => {
+    if (err) {
+      console.error("Error writing to file:", err);
+      return res.status(500).send("An error occurred while saving your order.");
+    }
+    res.send("Order submitted successfully and saved to file!");
+  });
+});

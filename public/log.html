@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style1.css"> <!-- You can add your styles here -->
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Your Account</h2>
+    <form action="/submit-order" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="medicine">Medicine:</label>
+      <input type="text" id="medicine" name="medicine" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+</body>
+</html>
